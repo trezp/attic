@@ -4,7 +4,8 @@
 <ul>
   {% for post in all_posts_list %}
   <h2>{{ post.title }}</h2>
-  <li>{{ post.text }}</li>
+  <li>{{ post.author }}</li>
+  <p>{{ post.body }}</p>
   {% endfor %}
 </ul>
 {% endblock content %}
