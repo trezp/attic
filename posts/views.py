@@ -1,4 +1,5 @@
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 from .models import Post
 # Create your views here.
 
@@ -29,3 +30,4 @@ class PostUpdateView(UpdateView):
 class PostDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
+    success_url = reverse_lazy('home')
