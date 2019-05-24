@@ -1,3 +1,8 @@
 {
-  "python.pythonPath": "/Users/treasureporth/.local/share/virtualenvs/attic-dd3UHweF/bin/python"
+  "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.6/bin/python3",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#103239",
+    "titleBar.activeBackground": "#164650",
+    "titleBar.activeForeground": "#F6FBFC"
+  }
 }
