@@ -1,7 +1,5 @@
-{% extends 'base.html' %} {% block content %}
-<h1>Attic</h1>
-
-{% for post in all_posts_list %}
+{% extends 'base.html' %} {% block content %} {% for post in all_posts_list %}
+{% if user.is_authenticated %}
 <div>
   <h2>
     <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
@@ -9,4 +7,4 @@
   <p>{{ post.author }}</p>
   <p>{{ post.body }}</p>
 </div>
-{% endfor %} {% endblock content %}
+{% endif %} {% endfor %} {% endblock content %}
